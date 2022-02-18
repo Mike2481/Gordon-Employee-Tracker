@@ -1,0 +1,29 @@
+{
+  "name": "gordon-employee-tracker",
+  "version": "1.0.0",
+  "description": "employee tracker app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mike2481/Gordon-Employee-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mike2481/Gordon-Employee-Tracker/issues"
+  },
+  "homepage": "https://github.com/Mike2481/Gordon-Employee-Tracker#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.3",
+    "inquirer": "^8.2.0",
+    "mysql2": "^2.3.3"
+  }
+}
