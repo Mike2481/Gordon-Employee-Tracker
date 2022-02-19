@@ -8,9 +8,7 @@ DROP TABLE IF EXISTS employees;
 
 CREATE TABLE department (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(30) NOT NULL,
-    manager_id INTEGER
-    -- CONSTRAINT fk_employees FOREIGN KEY (manager_id) REFERENCES employees(manager_id) 
+    name VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE role (

@@ -24,6 +24,7 @@ const options = () => {
         "Add a role",
         "Add an employee",
         "Update an employee role",
+        "Exit"
       ],
     })
     // uses the answer to determine which function to run using a switch/case
@@ -49,6 +50,9 @@ const options = () => {
           break;
         case "Update an employee role":
           updateEmployeeRole();
+          break;
+        case "Exit":
+          db.end();
           break;
       }
     });
@@ -144,7 +148,7 @@ const addDepartment = () => {
       db.query(sql, params, (err, result) => {
         if (err) throw err;
         // produces a table in the terminal
-        console.table(res);
+        console.table(result);
         // starts the initial prompt over
         options();
       });
